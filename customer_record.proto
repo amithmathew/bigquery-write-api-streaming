@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message CustomerRecord {
+  // Use the required keyword for client-side validation of required fields.
+  required string when = 1;
+  required string name = 2;
+  required string licenseplate = 3;
+}
