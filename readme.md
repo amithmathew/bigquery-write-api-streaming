@@ -8,3 +8,5 @@ Map `customer_record.proto` to bigquery table schema used. The code (as it is) e
 
 
 Run `protoc --python_out=. customer_record.proto` if changing the proto schema.
+
+CAVEAT: I haven't written error handling or checks to make sure all records are making it in. You ideally want to combine this with Cloud Monitoring dashboards to show records being streamed in.
